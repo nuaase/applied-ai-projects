@@ -1,6 +1,13 @@
+# 🌱 Campus Eco-Footprint AI Tracker
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://applied-ai-projects-nstei7vudzvq2r2tc6phdv.streamlit.app/)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 # ⚡ Multi-Source Live API Data Summarizer & Pipeline
 
-An automated data pipeline combining GitHub REST APIs, OpenAI Structured Outputs (Pydantic), and Google Apps Script Webhooks to extract, validate, and persist executive intelligence from unstructured developer commit feeds.
+An automated data pipeline combining GitHub REST APIs, OpenAI Structured Outputs (Pydantic), and Google Apps Script Webhooks to extract, validate, and persist executive intelligence from unstructured developer commit feeds. 
+
 
 ## Architecture
 1. **Extraction**: Ingests raw commit text from public GitHub repositories using requests.
