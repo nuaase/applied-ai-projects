@@ -25,8 +25,7 @@ An automated data pipeline combining GitHub REST APIs, OpenAI Structured Outputs
    OPENAI_API_KEY=your_openai_api_key_here
 5. Run the pipeline:
    python main.py
-   
-   ```mermaid
+```mermaid
 graph TD
     A[GitHub API] -->|Raw Commit Text| B(Python Data Pipeline)
     B -->|Schema Enforcement| C{OpenAI gpt-4o-mini}
