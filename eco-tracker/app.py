@@ -8,9 +8,13 @@ from openai import OpenAI
 
 # 1. Load environment variables & initialize OpenAI client
 load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key and "OPENAI_API_KEY" in st.secrets:
+    api_key = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=api_key)
 
-CSV_FILE = "eco_data.csv"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_FILE = os.path.join(BASE_DIR, "eco_data.csv")
 
 # Emission conversion factors (kg CO2 per unit)
 EMISSION_FACTORS = {
